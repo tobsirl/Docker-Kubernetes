@@ -17,3 +17,6 @@ Docker ID - Repo/Project name - Version
 
 running the docker image
 `docker run tobsirl/**redis`
+
+## Port mapping at run time
+`docker run -p 8080:8080 tobsirl/simpleweb`
