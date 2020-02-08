@@ -25,3 +25,18 @@ running the docker image
 ### Starting a shell in the container
 `docker run -it tobsirl/simpleweb sh`
 `docker exec -it e5936a165fbc sh`
+
+## Docker Compose
+yaml file
+```yaml
+version: '3'
+services: 
+  redis-server:
+    image: 'redis'
+  node-app:
+    build: . 
+    ports: 
+      - "4001:8081"
+```
+`docker-compose up`
+`docker-compose up --build`
