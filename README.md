@@ -23,7 +23,7 @@ running the docker image
 `docker run -p 8080:8080 tobsirl/simpleweb`
 
 ### Starting a shell in the container
-`docker run -it tobsirl/simpleweb sh`
+`docker run -it tobsirl/simpleweb sh`   
 `docker exec -it e5936a165fbc sh`
 
 ## Docker Compose
@@ -38,5 +38,11 @@ services:
     ports: 
       - "4001:8081"
 ```
-`docker-compose up`
-`docker-compose up --build`
+Start Containers
+`docker-compose up`  
+Start Containers with build
+`docker-compose up --build`  
+Launch in background
+`docker-compose up -d`
+Stop Container  
+`docker-compose down`  
