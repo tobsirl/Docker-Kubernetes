@@ -38,12 +38,13 @@ services:
     ports: 
       - "4001:8081"
 ```
-| Command                     | Explaination                |
-|-----------------------------|-----------------------------|
-| `docker-compose up`         | Start Containers            |
-| `docker-compose up --build` | Start Containers with build |
-| `docker-compose up -d`      | Launch in background        |
-| `docker-compose down`       | Stop Containers             |
+| Command                     | Explaination                                                              |
+|-----------------------------|---------------------------------------------------------------------------|
+| `docker-compose up`         | Start Containers                                                          |
+| `docker-compose up --build` | Start Containers with build                                               |
+| `docker-compose up -d`      | Launch in background                                                      |
+| `docker-compose down`       | Stop Containers                                                           |
+| `docker-compose ps`         | Prints out a list of the running containers (requires docker-compose.yml) |
 
 ### Automatic Restarts
 | Restart Policies | Explaination                                                        |
