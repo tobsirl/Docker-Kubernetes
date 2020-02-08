@@ -38,11 +38,17 @@ services:
     ports: 
       - "4001:8081"
 ```
-Start Containers  
-`docker-compose up`   
-Start Containers with build  
-`docker-compose up --build`    
-Launch in background  
-`docker-compose up -d`  
-Stop Container   
-`docker-compose down`    
+| Command                     | Explaination                |
+|-----------------------------|-----------------------------|
+| `docker-compose up`         | Start Containers            |
+| `docker-compose up --build` | Start Containers with build |
+| `docker-compose up -d`      | Launch in background        |
+| `docker-compose down`       | Stop Containers             |
+
+### Automatic Restarts
+| Restart Policies | Explaination                                                        |
+|------------------|---------------------------------------------------------------------|
+| "no"             | Never attempt to restart this container if it stops or crashes      |
+| always           | If this container stops for any reason always attempt to restart it |
+| on-failure       | Only restart if the container stops with an error code              |
+| unless-stopped   | Always restart unless we (the developers) forcibly stop it          |
