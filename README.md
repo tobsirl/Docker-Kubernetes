@@ -38,11 +38,11 @@ services:
     ports: 
       - "4001:8081"
 ```
-Start Containers
-`docker-compose up`  
-Start Containers with build
-`docker-compose up --build`  
-Launch in background
-`docker-compose up -d`
-Stop Container  
-`docker-compose down`  
+Start Containers  
+`docker-compose up`   
+Start Containers with build  
+`docker-compose up --build`    
+Launch in background  
+`docker-compose up -d`  
+Stop Container   
+`docker-compose down`    
