@@ -53,3 +53,7 @@ services:
 | always           | If this container stops for any reason always attempt to restart it |
 | on-failure       | Only restart if the container stops with an error code              |
 | unless-stopped   | Always restart unless we (the developers) forcibly stop it          |
+
+## Dockers Volumes
+`docker build -f Dockerfile.dev .`   
+`docker run -p 3000:3000 -v /app/node_modules -v$(pwd):/app <imageId>`   
