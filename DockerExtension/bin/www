@@ -8,6 +8,8 @@ var app = require('../app');
 var debug = require('debug')('dockerextension:server');
 var http = require('http');
 
+debug.log = console.debug.bind(console);
+
 /**
  * Get port from environment and store in Express.
  */
