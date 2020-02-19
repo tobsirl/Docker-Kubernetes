@@ -26,6 +26,15 @@ class Fib extends Component {
     });
   }
 
+  handleSubmit = async e => {
+    e.preventDefault();
+
+    await fetch('/api/values', {
+      index: this.state.index
+    });
+    this.setState({ index: '' });
+  };
+
   renderSeenIndexes() {
     return this.state.seenIndexes.map(({ number }) => number.join(', '));
   }
@@ -46,9 +55,13 @@ class Fib extends Component {
   render() {
     return (
       <div>
-        <form action="">
+        <form action="" onSubmit={this.handleSubmit}>
           <label for="">Enter your index:</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={this.state.index}
+            onChange={e => this.setState({ index: e.target.value })}
+          />
           <button>Submit</button>
         </form>
 
