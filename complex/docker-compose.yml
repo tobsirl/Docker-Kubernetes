@@ -3,6 +3,8 @@ version: '3'
 services:
   postgres:
     image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres_password
     # build: .
     # environment:
     #   NODE_ENV: production
@@ -14,6 +16,15 @@ services:
     build:
       dockerfile: Dockerfile.dev
       context: ./server
-    volumes: 
+    volumes:
       - /app/node_modules
       - ./server:/app
+    environment: 
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - PG_USER=postgres
+      - PG_HOST=postgres
+      - PG_DATABASE=
+      - PG_PASSWORD=postgres_password
+      - PG_PORT=5432
+
