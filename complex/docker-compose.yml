@@ -5,14 +5,9 @@ services:
     image: postgres:latest
     environment:
       - POSTGRES_PASSWORD=postgres_password
-    # build: .
-    # environment:
-    #   NODE_ENV: production
-    # ports:
-    #   - 3000:3000
   redis:
     image: redis:latest
-  server:
+  api:
     build:
       dockerfile: Dockerfile.dev
       context: ./server
