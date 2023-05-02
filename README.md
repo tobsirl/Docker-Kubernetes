@@ -159,4 +159,7 @@ docker rm <containerId> # remove container
 docker rm <containerId> <containerId> <containerId> # remove multiple containers
 docker rmi <imageId> # remove image
 docker rmi <imageId> <imageId> <imageId> # remove multiple images
+
+# docker run remove container after exit
+docker run --rm -it <containerId> sh
 ```
