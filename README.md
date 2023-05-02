@@ -168,4 +168,7 @@ docker image inspect <imageId>
 
 # docker copy files into a container
 docker cp <file> <containerId>:<path>
+
+# docker copy files from a container
+docker cp <containerId>:<path> <file>
 ```
