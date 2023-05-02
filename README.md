@@ -117,4 +117,7 @@ docker run node # download latest node image and run it
 docker ps -a # list all containers
 
 docker run -it node # run container in interactive mode
+
+docker srart <containerId> # start previous container
+docker stop <containerId> # stop container
 ```
