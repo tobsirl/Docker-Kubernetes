@@ -146,4 +146,11 @@ docker logs <containerId>
 docker logs -f <containerId> # follow logs
 docker logs -f -t <containerId> # follow logs with timestamps
 dokker logs --tail 5 <containerId> # show last 5 logs
+
+# docker interactive mode
+docker run -it <containerId> sh # run shell in container
+-i, --interactive                    Keep STDIN open even if not attached
+-t, --tty                            Allocate a pseudo-TTY
+
+docker start -i -a <containerId> # start container in interactive mode
 ```
