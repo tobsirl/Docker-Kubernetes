@@ -153,4 +153,9 @@ docker run -it <containerId> sh # run shell in container
 -t, --tty                            Allocate a pseudo-TTY
 
 docker start -i -a <containerId> # start container in interactive mode
+
+# docker deleting images and containers
+docker rm <containerId> # remove container
+docker rm <containerId> <containerId> <containerId> # remove multiple containers
+
 ```
