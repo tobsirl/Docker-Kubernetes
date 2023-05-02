@@ -120,4 +120,8 @@ docker run -it node # run container in interactive mode
 
 docker srart <containerId> # start previous container
 docker stop <containerId> # stop container
+
+# Attached and Detached mode
+docker run -it node # attached mode
+docker run -it -d node # detached mode
 ```
