@@ -157,5 +157,6 @@ docker start -i -a <containerId> # start container in interactive mode
 # docker deleting images and containers
 docker rm <containerId> # remove container
 docker rm <containerId> <containerId> <containerId> # remove multiple containers
-
+docker rmi <imageId> # remove image
+docker rmi <imageId> <imageId> <imageId> # remove multiple images
 ```
