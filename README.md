@@ -171,4 +171,10 @@ docker cp <file> <containerId>:<path>
 
 # docker copy files from a container
 docker cp <containerId>:<path> <file>
+
+# docker naming containers
+docker run --name <name> <containerId>
+
+# docker naming images
+docker build -t <tag>:<version> .
 ```
