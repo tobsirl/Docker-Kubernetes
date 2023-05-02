@@ -127,4 +127,10 @@ docker run -it -d node # detached mode
 
 # Attach to a running container
 docker attach <containerId>
+
+# dokcer logs
+docker logs <containerId>
+docker logs -f <containerId> # follow logs
+docker logs -f -t <containerId> # follow logs with timestamps
+dokker logs --tail 5 <containerId> # show last 5 logs
 ```
