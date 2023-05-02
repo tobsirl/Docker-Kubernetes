@@ -124,6 +124,7 @@ docker stop <containerId> # stop container
 # Attached and Detached mode
 docker run -it node # attached mode
 docker run -it -d node # detached mode
+docker start -a -i <containerId> # attached mode
 
 # Attach to a running container
 docker attach <containerId>
