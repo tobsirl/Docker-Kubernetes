@@ -176,5 +176,5 @@ docker cp <containerId>:<path> <file>
 docker run --name <name> <containerId>
 
 # docker naming images
-docker build -t <tag>:<version> .
+docker build -t <repo>:<tag> .
 ```
