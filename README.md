@@ -165,4 +165,7 @@ docker run --rm -it <containerId> sh
 
 # inspect an image
 docker image inspect <imageId>
+
+# docker copy files into a container
+docker cp <file> <containerId>:<path>
 ```
