@@ -199,4 +199,8 @@ Volumes are folders on your host machine hard drive which are mounted ("made ava
 ```bash
 # named volumes
 docker run -v <volumeName>:<path> <containerId>
+
+# removing anonymous volumes
+docker volume rm <volumeName>
+docker volume prune # remove all unused volumes
 ```	
