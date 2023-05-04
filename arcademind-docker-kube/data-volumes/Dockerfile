@@ -12,6 +12,8 @@ COPY . .
 
 EXPOSE 3000
 
+VOLUME [ "/usr/src/app/feedback" ]
+
 RUN chown -R node /usr/src/app
 
 USER node
