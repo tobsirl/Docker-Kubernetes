@@ -204,3 +204,16 @@ docker run -v <volumeName>:<path> <containerId>
 docker volume rm <volumeName>
 docker volume prune # remove all unused volumes
 ```	
+
+## Bind Mounts
+Bind Mounts are specified by you, the developer, at container launch time.
+
+With bind mounts, you specify a specific folder on the host machine. This folder is then mounted into the container.
+
+Bind mounts are great for when you want to actively develop code on your host machine (e.g. using your code editor) and test it inside a container.
+
+You define a folder / path on your host machine. This folder is then mounted into the container.
+
+Great for persistent, editable data e.g. source code.
+
+```bash
