@@ -216,4 +216,15 @@ You define a folder / path on your host machine. This folder is then mounted int
 
 Great for persistent, editable data e.g. source code.
 
+### Volume commands
+  
 ```bash
+# list volumes
+docker volume ls
+
+# inspect volume
+docker volume inspect <volumeName>
+
+# remove volume
+docker volume rm <volumeName>
+```
