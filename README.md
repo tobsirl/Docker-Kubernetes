@@ -203,9 +203,10 @@ docker run -v <volumeName>:<path> <containerId>
 # removing anonymous volumes
 docker volume rm <volumeName>
 docker volume prune # remove all unused volumes
-```	
+``` 
 
 ## Bind Mounts
+
 Bind Mounts are specified by you, the developer, at container launch time.
 
 With bind mounts, you specify a specific folder on the host machine. This folder is then mounted into the container.
@@ -228,3 +229,13 @@ docker volume inspect <volumeName>
 # remove volume
 docker volume rm <volumeName>
 ```
+
+## Arguments and Environment Variables
+
+Docker supports build-time arguments and runtime environment variables.
+
+### Build Time Arguments
+
+Available inside of Dockerfile, **NOT** accesssible in CMD or application code.
+
+Set on image build (docker build) `--build-arg <argName>=<argValue>`
