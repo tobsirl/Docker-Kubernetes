@@ -203,7 +203,7 @@ docker run -v <volumeName>:<path> <containerId>
 # removing anonymous volumes
 docker volume rm <volumeName>
 docker volume prune # remove all unused volumes
-``` 
+```
 
 ## Bind Mounts
 
@@ -239,3 +239,9 @@ Docker supports build-time arguments and runtime environment variables.
 Available inside of Dockerfile, **NOT** accesssible in CMD or application code.
 
 Set on image build (docker build) `--build-arg <argName>=<argValue>`
+
+### Environment Variables
+
+Available inside of Dockerfile and in the application code.
+
+Set via ENV in Dockerfile or via --env on `docker run`
