@@ -1,5 +1,7 @@
 FROM node:lts-alpine
 
+ARG NODE_ENV=production
+
 WORKDIR /usr/src/app
 
 COPY package.json .
