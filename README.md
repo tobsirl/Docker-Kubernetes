@@ -245,3 +245,7 @@ Set on image build (docker build) `--build-arg <argName>=<argValue>`
 Available inside of Dockerfile and in the application code.
 
 Set via ENV in Dockerfile or via --env on `docker run`
+
+```bash
+docker run -e <envName>=<envValue> <containerId> # set environment variable
+```
