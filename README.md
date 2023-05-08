@@ -268,3 +268,9 @@ For some values, this might not matter but for credentials, private keys etc. yo
 If you use a separate file, the values are not part of the image since you point at that file when you run `docker run`. But make sure you don't commit that separate file as part of your source control repository, if you're using source control.
 
 ## Networks
+### Container to Web Communication
+
+
+### Container to Host Communication
+
+### Container to Container Communication
