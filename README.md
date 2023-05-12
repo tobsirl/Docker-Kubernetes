@@ -284,4 +284,7 @@ Create a network and add containers to it
 ```bash
 # create a network
 docker network create <networkName>
+
+# list networks
+docker network ls
 ```
