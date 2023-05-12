@@ -278,3 +278,10 @@ Works out of the box
 use `host.docker.internal` as the host address
 
 ### Container to Container Communication
+
+Create a network and add containers to it
+
+```bash
+# create a network
+docker network create <networkName>
+```
