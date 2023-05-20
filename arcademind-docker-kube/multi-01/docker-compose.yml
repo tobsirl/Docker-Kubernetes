@@ -4,5 +4,7 @@ services:
     image: 'mongo'
     volumes:
       - 'data:/data/db'
-  backend:
-  frontend:
+    env_file:
+      - ./env/mongo.env
+  # backend:
+  # frontend:
