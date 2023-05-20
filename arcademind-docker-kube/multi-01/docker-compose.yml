@@ -6,7 +6,8 @@ services:
       - 'data:/data/db'
     env_file:
       - ./env/mongo.env
-  # backend:
+  backend:
+    build: ./backend
   # frontend:
 
 volumes:
