@@ -8,7 +8,12 @@ services:
       - ./env/mongo.env
   backend:
     build: ./backend
+    ports:
+      - '80:80'
+    volumes:
+      - logs:/app/logs
   # frontend:
 
 volumes:
   data:
+  logs:
