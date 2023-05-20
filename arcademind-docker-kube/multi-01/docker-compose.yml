@@ -12,6 +12,7 @@ services:
       - '80:80'
     volumes:
       - logs:/app/logs
+      - ./backend:/app
   # frontend:
 
 volumes:
