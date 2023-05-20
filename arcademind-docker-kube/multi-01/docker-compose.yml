@@ -8,3 +8,6 @@ services:
       - ./env/mongo.env
   # backend:
   # frontend:
+
+volumes:
+  data:
